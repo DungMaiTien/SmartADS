@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.controller.DetailController">
+    <center>
+        <AnchorPane>
+            <children>
+                <TableView fx:id="detailTable" layoutX="14.0" layoutY="14.0" prefHeight="700.0" prefWidth="800.0">
+                    <columns>
+                        <TableColumn fx:id="adIdColumn" prefWidth="50.0" text="Ad ID" />
+                        <TableColumn fx:id="adContentColumn" prefWidth="100.0" text="Ad Content" />
+                        <TableColumn fx:id="hostColumn" prefWidth="150.0" text="Target_Host" />
+                        <TableColumn fx:id="targetDomainColumn" prefWidth="150.0" text="Target_Domain" />
+                        <TableColumn fx:id="Web_categoryColumn" prefWidth="150.0" text="Web_category" />
+                        <TableColumn fx:id="targetAgeMinColumn" prefWidth="75.0" text="Target Age Min" />
+                        <TableColumn fx:id="targetAgeMaxColumn" prefWidth="75.0" text="Target Age Max" />
+                        <TableColumn fx:id="targetGenderColumn" prefWidth="75.0" text="Target Gender" />
+                        <TableColumn fx:id="targetRadiusKmColumn" prefWidth="100.0" text="Target Radius (km)" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </center>
+    <bottom>
+        <HBox spacing="50" alignment="CENTER">
+            <Button text="Back" onAction="#handleBack" fx:id="backButton"/>
+            <Button text="Add" onAction="#handleAdd"/>
+            <Button text="Edit" onAction="#handleEdit"/>
+            <Button text="Delete" onAction="#handleDelete"/>
+        </HBox>
+    </bottom>
+</BorderPane>

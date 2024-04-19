@@ -1,0 +1,9 @@
+app\Dashboard.class
+fakedata\GenerateCRMData.class
+app\DatabaseManager.class
+app\LoginController.class
+org\example\OfflineDataConsumer.class
+fakedata\DomainDataGenerator.class
+app\UserManager.class
+org\example\KafkaDataConsumer.class
+org\example\RealtimeDataProducer.class
