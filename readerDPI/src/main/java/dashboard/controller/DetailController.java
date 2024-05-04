@@ -1,6 +1,7 @@
 package dashboard.controller;
 
 import dashboard.models.DatabaseManager;
+import dashboard.models.DetailItem;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -62,7 +63,7 @@ public class DetailController {
                     "FROM advertising " +
                     "JOIN store_domains ON advertising.store_id = store_domains.store_id " +
                     "JOIN domains ON store_domains.target_domain = domains.domain_id " +
-                    "WHERE store_domains.store_id = ?";
+                    "WHERE advertising.store_id = ?";
             PreparedStatement statement = conn.prepareStatement(query);
             statement.setInt(1, storeId);
             ResultSet resultSet = statement.executeQuery();

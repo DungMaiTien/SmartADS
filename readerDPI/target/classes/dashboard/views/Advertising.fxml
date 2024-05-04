@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?> <!-- Thêm dòng này -->
+<!-- Thêm dòng này -->
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="dashboard.controller.AdvertisingController">
@@ -27,12 +27,15 @@
     <!-- Sử dụng HBox thay vì VBox -->
     <bottom>
         <HBox spacing="50" alignment="CENTER">
+            <Button text="Start Only" onAction="#handleStart_Only"/>
+            <Button text="Start ALL" onAction="#handleStart_All"/>
             <Button text="Performance" onAction="#handleperformance"/>
-            <Button text="Detail" onAction="#handleDetail"/>
+            <Button text="Detail ADV" onAction="#handleDetail"/>
             <Button text="Add" onAction="#handleAdd"/>
             <Button text="Edit" onAction="#handleEdit"/>
             <Button text="Delete" onAction="#handleDelete"/>
             <Button text="Logout" onAction="#handleLogout"/>
+
         </HBox>
     </bottom>
 

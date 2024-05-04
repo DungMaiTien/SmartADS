@@ -64,7 +64,7 @@
       <recent name="C:\ADS\readerDPI\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Login">
     <configuration name="Advertising" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dashboard.models.Advertising" />
       <module name="readerDPI" />
@@ -109,7 +109,7 @@
       <module name="readerDPI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dashboard.controller.*" />
+          <option name="PATTERN" value="dashboard.models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -181,14 +181,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dashboard/models/Login.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/RealtimeDataProducer.java</url>
           <line>10</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dashboard/models/Login.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

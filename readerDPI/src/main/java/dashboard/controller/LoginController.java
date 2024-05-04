@@ -47,7 +47,7 @@ public class LoginController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/dashboard/views/Advertising.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
-            stage.setTitle("Manage Advertising");
+            stage.setTitle("Manage Stores");
             stage.setScene(new Scene(root, 1000, 800));
             stage.show();
         } catch (IOException e) {

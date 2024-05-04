@@ -9,12 +9,12 @@
     <center>
         <AnchorPane>
             <children>
-                <TableView fx:id="detailTable" layoutX="14.0" layoutY="14.0" prefHeight="700.0" prefWidth="800.0">
+                <TableView fx:id="detailTable" layoutX="14.0" layoutY="14.0" prefHeight="750.0" prefWidth="1000.0">
                     <columns>
                         <TableColumn fx:id="adIdColumn" prefWidth="50.0" text="Ad ID" />
                         <TableColumn fx:id="adContentColumn" prefWidth="100.0" text="Ad Content" />
                         <TableColumn fx:id="hostColumn" prefWidth="150.0" text="Target_Host" />
-                        <TableColumn fx:id="targetDomainColumn" prefWidth="150.0" text="Target_Domain" />
+                        <TableColumn fx:id="targetDomainColumn" prefWidth="150.0" text="Target_DomainID" />
                         <TableColumn fx:id="Web_categoryColumn" prefWidth="150.0" text="Web_category" />
                         <TableColumn fx:id="targetAgeMinColumn" prefWidth="75.0" text="Target Age Min" />
                         <TableColumn fx:id="targetAgeMaxColumn" prefWidth="75.0" text="Target Age Max" />
@@ -24,6 +24,7 @@
                 </TableView>
             </children>
         </AnchorPane>
+
     </center>
     <bottom>
         <HBox spacing="50" alignment="CENTER">
